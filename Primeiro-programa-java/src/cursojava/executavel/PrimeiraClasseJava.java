@@ -16,6 +16,6 @@ public class PrimeiraClasseJava {
     String cpf = "085.397.353.38";
      
    System.out.println("Maior idade é = "+ maiorIdade );
-    
+   System.out.println("A idade do idoso é =" + idosoIdade); 
 }
 }
