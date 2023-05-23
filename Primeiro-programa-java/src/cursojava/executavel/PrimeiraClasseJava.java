@@ -4,10 +4,18 @@ public class PrimeiraClasseJava {
 	
 	/*main é um metodo auto ecxecutavel em java*/
     public static void main(String[] args) {
-    	System.out.println("meu primeiro progama em java");
-	   System.out.println("uai cuidaaaa");
-    	System.out.println("chamaaa");
-    	System.out.println("caio");
-	   System.out.println(" quem diria eu aqui sozinho aprendendo a ser programador");
+    	
+    int maiorIdade = 18;
+    
+    int idosoIdade = 60;
+    
+    int jovemIdade = 16;
+    
+    int criancaIdade = 7;
+    
+    String cpf = "085.397.353.38";
+     
+   System.out.println("Maior idade é = "+ maiorIdade );
+    
 }
 }
