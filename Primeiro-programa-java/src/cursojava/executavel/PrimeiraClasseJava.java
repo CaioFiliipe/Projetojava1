@@ -1,5 +1,5 @@
 package cursojava.executavel;
-
+/*aksak*/
 public class PrimeiraClasseJava {
 	
 	/*main é um metodo auto ecxecutavel em java*/
