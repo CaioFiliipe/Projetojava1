@@ -6,18 +6,13 @@ public class PrimeiraClasseJava {
 	/*main é um metodo auto ecxecutavel em java*/
     public static void main(String[] args) {
   
-   /*CHAR representa uma unica letra ex  'F' uma letra dento de aspas simples*/
-    	
-    	char pessoaFeminino = 'F';
-    	
-    	if(pessoaFeminino == 'F') {
-    		System.out.println("Feminino");
-    	}else {
-    		System.out.println("Masculino");
-    	}
-    	
-    	
-    	
+   //String no java sempre será um texto de tamanho qualquer de caracteres	
+    String textoQualquer ="as asdjajsdjl asdjklajsldkj asljdlkajsdljalsj e por ai vai ";
+    
+    String none;
+    String cpf;
+    String telefone;
+    String endereco;
     
     
    }
