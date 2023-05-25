@@ -5,26 +5,26 @@ public class PrimeiraClasseJava {
 	/* main é um metodo auto ecxecutavel em java */
 	public static void main(String[] args) {
 
-		int nota1 = 50;
-		int nota2 = 90;
-		int nota3 = 40;
-		int nota4 = 20;
+		int nota1 = 40;
+		int nota2 = 50;
+		int nota3 = 30;
+		int nota4 = 60;
 		int media = 0;
 
 		media = (nota1 + nota2 + nota3 + nota4) / 4;
-//Condiçoes logicas com IF e ELSE
-		if (media >= 70) {
-			System.out.println("aluno Aprovado: " + media);
+		// Operaçoes logicas aninhadas: São operaçoes dentro de operaçoes
+		if (media >= 50) {
+			if (media >= 70) {
+			if(media >90) {
+				System.out.println("Aluno provado direto - Parabens : "+media);
+			}	
+			}else {
+				System.out.println("Aluno em precuperação:" + media);
+			}
+		}else {
+			System.out.println("Aluno reprovado direto:" + media);
 		}
-		if (media >= 40 && media <= 69) {
-			System.out.println("Aluno em Recuperaçao: " + media);
-		} else {
-			System.out.println("Aluno Reprovado: " + media);
-		}
-       
-		//operadores ternarios sao para micro validaçoes
-		
-		String saidaResultado = media >= 70 ? "aluno aprovado" : "aluno reprovado";
-		System.out.println(saidaResultado);
+
 	}
+
 }
