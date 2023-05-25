@@ -4,16 +4,22 @@ public class PrimeiraClasseJava {
 
 	/* main é um metodo auto ecxecutavel em java */
 	public static void main(String[] args) {
-
-	int nota1 = 100;
-	int nota2 = 100;
+  //Estrutura de repetiçao while
 	
-	if (nota1 >= nota2) {
-		System.out.println("Nota 1 é maior e igual");
-	}else {
-		System.out.println("as notas sao iguais");
-	}
+		int numero = 0;
+		
+		while (numero <= 10) { //verifica e depois  executa o codigo
+			System.out.println("O numero atual é : " + numero);
+			numero++;
+		}
+		/*----------------------------------------*/
+		int numero2 = 0;
 	
+		do { //primeiro ele executa depois verifica
+			System.out.println("O numero atual é : " + numero2);
+			numero2++;
+		}while(numero2 <= 60);
+		
 	}
 
 }
