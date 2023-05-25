@@ -15,11 +15,10 @@ public class PrimeiraClasseJava {
 
 		if (media >= 70) {
 			System.out.println("aluno Aprovado: " + media);
-		} 
+		}
 		if (media >= 40 && media <= 69) {
 			System.out.println("Aluno em Recuperaçao: " + media);
-		}
-		else {
+		} else {
 			System.out.println("Aluno Reprovado: " + media);
 		}
 
