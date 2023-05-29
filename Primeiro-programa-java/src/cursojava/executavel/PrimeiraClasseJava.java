@@ -6,31 +6,42 @@ public class PrimeiraClasseJava {
 
 	/* main é um metodo auto ecxecutavel em java */
 	public static void main(String[] args) {
-   // Resto da divisão
-	String carros =	 JOptionPane.showInputDialog("Informe a quantidade de carros");
-	String pessoas =	 JOptionPane.showInputDialog("Informe a quantidade de pessoas");
+  
+	String nota1 = JOptionPane.showInputDialog("Informe a nota 1");
+	String nota2 = JOptionPane.showInputDialog("Informe a nota 2");	
+	String nota3 = JOptionPane.showInputDialog("Informe a nota 3");
+	String nota4 = JOptionPane.showInputDialog("Informe a nota 4");
 	
-	double carroNumero = Double.parseDouble(carros);
-	double pessoaNumero = Double.parseDouble(pessoas);
+	double dNota1 = Double.parseDouble(nota1);
+	double dNota2 = Double.parseDouble(nota2);
+	double dNota3 = Double.parseDouble(nota3);
+	double dNota4 = Double.parseDouble(nota4);
 	
-	int divisao = (int) (carroNumero / pessoaNumero);//quando ele fez o calculo ele descobrou que ficava 4,5 ,mas como eu connvertir para inteiro entao ele so mostra o inteiro 
+    double media = (dNota1 + dNota2 + dNota3 + dNota4) /4;
+    
+    //Media para aprovação é 70
+    
+    if (media >= 50) {
+    	if(media >= 70) {
+    		JOptionPane.showConfirmDialog(null, "Aluno está aprovado com media de :" + media);
+    	}else {
+    		JOptionPane.showConfirmDialog(null, "Aluno em recuperação com media de :" + media);
+    	}
+    }else {
+    	JOptionPane.showConfirmDialog(null, "Aluno está reprovado com media de :" + media);
+    }
+    
+   JOptionPane.showConfirmDialog(null, "A media é :" + media);
 	
-	double resto = carroNumero % pessoaNumero; // aqui ele mostra o resto da divisao
 	
-	int resposta =JOptionPane.showConfirmDialog(null, "Deseja ver o Resultado da divisão?");
 	
-	if(resposta == 0) {
-		JOptionPane.showMessageDialog(null, "Divisao para Pessoas deu " + divisao);
-	}else {
-		System.out.println("Não quiz ver o resultado");
-	}
-	//System.out.println("Divisao para Pessoas " + divisao + " carros e sobrou " + resto + " carros");		
-	 resposta =JOptionPane.showConfirmDialog(null, "Deseja ver o Resto da divisão?");
-	if (resposta == 0) {
-		JOptionPane.showConfirmDialog(null, "O Resto da divosão é " + resto);		
-	}else {
-		System.out.println("Não quiz ver o resultado");
-	}
+	
+	
+	
+	
+	
+	
+	
 	}
 
 }
