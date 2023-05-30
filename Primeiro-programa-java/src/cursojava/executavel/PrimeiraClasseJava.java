@@ -4,7 +4,7 @@ import cursojava.classes.Aluno;
 
 public class PrimeiraClasseJava {
 
-	/* main é um metodo auto ecxecutavel em java */
+	// main é um metodo auto ecxecutavel em java
 	public static void main(String[] args) {
   
 		//Obejto ainda não existe na memoria
