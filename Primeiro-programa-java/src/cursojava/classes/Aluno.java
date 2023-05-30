@@ -3,6 +3,8 @@ package cursojava.classes;
 //Estra é nosa classe/obejto que representa o aluno
 public class Aluno {
 	
+	
+	//Esses são os atributos do Aluno
 	String nome;
 	int idade;
 	String dataNascimento;

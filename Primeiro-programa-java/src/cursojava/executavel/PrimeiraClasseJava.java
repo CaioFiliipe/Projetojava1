@@ -7,8 +7,9 @@ public class PrimeiraClasseJava {
 	// main é um metodo auto ecxecutavel em java
 	public static void main(String[] args) {
   
-		//Obejto ainda não existe na memoria
-	
+		
+	//New Aluno() é uma instancia (Criação de Obejtos)
+	//aluno1 é uma referencia para o Obejto Aluno
 		Aluno aluno1 = new Aluno(); // aqui será o joão
 	 		
 		Aluno aluno2 = new Aluno(); // aqui será o pedro
