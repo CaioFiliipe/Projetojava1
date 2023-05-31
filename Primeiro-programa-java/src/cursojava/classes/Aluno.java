@@ -2,12 +2,12 @@ package cursojava.classes;
 
 //Estra é nosa classe/obejto que representa o aluno
 public class Aluno {
-	
+	//caio
 	
 	//Esses são os atributos do Aluno.
-	String nome;
-	int idade;
-	String dataNascimento;
+	public  String nome;
+	 public int idade;
+	 public String dataNascimento;
 	String registoGeral;
 	String numeroCpf;
 	String nomeMae;
@@ -27,5 +27,7 @@ public class Aluno {
 	public Aluno (String nomePadrao , int idadePadrao) {
 	 nome = nomePadrao;
 	 idade = idadePadrao;
-			 
+	 {
+		 }		 
+	 }
 }
