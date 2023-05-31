@@ -8,7 +8,7 @@ public class PrimeiraClasseJava {
 	public static void main(String[] args) {
    		
 	
-	Aluno aluno1 = new Aluno();//aqui sera o joao	
+	Aluno aluno1 = new Aluno();//aqui sera o joao	.
 	
     aluno1.setNome("João da silva");
     aluno1.setIdade(50);
