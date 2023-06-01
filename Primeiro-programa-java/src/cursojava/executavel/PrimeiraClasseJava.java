@@ -8,7 +8,7 @@ public class PrimeiraClasseJava {
 	public static void main(String[] args) {
    		
 	
-	Aluno aluno1 = new Aluno();//aqui sera o joao	.
+	Aluno aluno1 = new Aluno();	
 	
     aluno1.setNome("João da silva");
     aluno1.setIdade(50);
@@ -36,6 +36,8 @@ public class PrimeiraClasseJava {
     System.out.println("Serie Matriculada  = " + aluno1.getSerieMatriculado());
     System.out.println("Nome da Escola Matriculada  é = " + aluno1.getNomeEscola());
     System.out.println("Media da nota é = " +aluno1.getMediaNota());
+    System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+    
     System.out.println("-----------------------------------------------------------");
     
     
@@ -66,6 +68,7 @@ public class PrimeiraClasseJava {
     System.out.println("Serie Matriculada  = " + aluno2.getSerieMatriculado());
     System.out.println("Nome da Escola Matriculada  é = " + aluno2.getNomeEscola());
     System.out.println("Media da nota é = " + aluno2.getMediaNota());
+    System.out.println("Resultado = " + (aluno2.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
 	System.out.println("----------------------------------------------------------------");
 	
 	   
@@ -96,7 +99,9 @@ public class PrimeiraClasseJava {
     System.out.println("Serie Matriculada  = " + aluno3.getSerieMatriculado());
     System.out.println("Nome da Escola Matriculada  é = " + aluno3.getNomeEscola());
     System.out.println("Media da nota é = " + aluno3.getMediaNota());
-	System.out.println("-------------------------------------------------------------");
+    System.out.println("Resultado = " + (aluno3.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+
+    System.out.println("-------------------------------------------------------------");
 	
 	
     Aluno aluno4 = new Aluno(); 
@@ -126,6 +131,8 @@ public class PrimeiraClasseJava {
     System.out.println("Serie Matriculada  = " + aluno4.getSerieMatriculado());
     System.out.println("Nome da Escola Matriculada  é = " + aluno4.getNomeEscola());
     System.out.println("Media da nota é = " + aluno4.getMediaNota());
+    System.out.println("Resultado = " + (aluno4.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+
     System.out.println("-----------------------------------------------------------------");
            
 	Aluno aluno5 = new Aluno();
@@ -155,7 +162,9 @@ public class PrimeiraClasseJava {
 	    System.out.println("Serie Matriculada  = " + aluno5.getSerieMatriculado());
 	    System.out.println("Nome da Escola Matriculada  é = " + aluno5.getNomeEscola());
 	    System.out.println("Media da nota é = " + aluno5.getMediaNota());
-	    System.out.println("-----------------------------------------------------------------");
+	    System.out.println("Resultado = " + (aluno5.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+
+	    System.out.println("-----------------------------------------------------------------");//
 	           
 	
 	}
