@@ -12,8 +12,8 @@ public class PrimeiraClasseJava {
 	String nome = JOptionPane.showInputDialog("Qual o Nome do aluno ?");
 	String idade = JOptionPane.showInputDialog("Qual a sua idade do aluno ? ");
 	String DataNascimento = JOptionPane.showInputDialog("Qual a sua data de nascimento ? ");
-	String Rg = JOptionPane.showInputDialog("Qual o numero do seu RG ? ");
-	String cpf = JOptionPane.showInputDialog("Qual o numero do seu Cpf? ");
+	String Rg = JOptionPane.showInputDialog("Digite seu RG ? ");
+	String cpf = JOptionPane.showInputDialog("Digite seu Cpf? ");
 	String mae = JOptionPane.showInputDialog(" nome da sua mãe ? ");
 	String pai = JOptionPane.showInputDialog(" nome do seu pai ? ");
 	String DataMatricula = JOptionPane.showInputDialog("Digite a data da Matricula ? ");
@@ -23,7 +23,7 @@ public class PrimeiraClasseJava {
 	String Nota2 = JOptionPane.showInputDialog("Digite sua segunda nota ? ");
 	String Nota3 = JOptionPane.showInputDialog("Digite sua terceira nota ? ");
 	String Nota4 = JOptionPane.showInputDialog("Digite sua quarta nota ? ");
-	
+	//
 	Aluno aluno1 = new Aluno();	
 	
     aluno1.setNome(nome);
