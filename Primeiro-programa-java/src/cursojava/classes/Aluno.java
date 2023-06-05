@@ -171,6 +171,14 @@ public void setNota4(double nota4) {
 		 return "Aluno Está Reprovado"; 
 	  }
   }
+
+@Override
+public String toString() {
+	return "Aluno [nome=" + getNome() + ", idade=" + getIdade() + ", dataNascimento=" + dataNascimento + ", RegistroGeral="
+			+ RegistroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
+			+ ", dataMatricula=" + dataMatricula + ", serieMatriculado=" + serieMatriculado + ", nomeEscola="
+			+ nomeEscola + ", nota1=" + nota1 + ", nota2=" + nota2 + ", nota3=" + nota3 + ", nota4=" + nota4 + "]";
+}
   
 }
    

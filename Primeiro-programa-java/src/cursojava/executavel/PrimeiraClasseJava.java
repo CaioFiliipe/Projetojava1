@@ -23,7 +23,7 @@ public class PrimeiraClasseJava {
 	String Nota2 = JOptionPane.showInputDialog("Digite sua segunda nota ? ");
 	String Nota3 = JOptionPane.showInputDialog("Digite sua terceira nota ? ");
 	String Nota4 = JOptionPane.showInputDialog("Digite sua quarta nota ? ");
-	//
+	
 	Aluno aluno1 = new Aluno();	
 	
     aluno1.setNome(nome);
@@ -41,23 +41,13 @@ public class PrimeiraClasseJava {
     aluno1.setNota3(Double.parseDouble(Nota3));
     aluno1.setNota4(Double.parseDouble(Nota4));
     
-    System.out.println("Nome é = " + aluno1.getNome());
-    System.out.println("Idade é = " + aluno1.getIdade());
-    System.out.println("Data de Nascimento é = " + aluno1.getDataNascimento());
-    System.out.println("Numero do Registo geral é = " + aluno1.getRegistroGeral());
-    System.out.println("Numero do CPF é = " + aluno1.getNumeroCpf());
-    System.out.println("Nome da Mãe é = " + aluno1.getNomeMae());
-    System.out.println("Nome do Pai é = " + aluno1.getNomePai());
-    System.out.println("A Data de matricula foi em = " + aluno1.getDataMatricula());
-    System.out.println("Serie Matriculada  = " + aluno1.getSerieMatriculado());
-    System.out.println("Nome da Escola Matriculada  é = " + aluno1.getNomeEscola());
-    System.out.println("Media da nota é = " +aluno1.getMediaNota());
-    System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
     
-    System.out.println("-----------------------------------------------------------");
-    
-               
-	
+      
+      System.out.println(aluno1.toString());//descreve do obejeto na memoria
+      System.out.println("Media do aluno =" + aluno1.getMediaNota());
+      System.out.println("Resultado = " + aluno1.getAlunoAprovado2());
+     
+      
 	}
 
 }
