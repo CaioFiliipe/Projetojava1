@@ -9,7 +9,7 @@ public class PrimeiraClasseJava {
 	// main é um metodo auto ecxecutavel em java
 	public static void main(String[] args) {
    		
-	String nome = JOptionPane.showInputDialog("Qual o Nome do aluno ?");
+	/*String nome = JOptionPane.showInputDialog("Qual o Nome do aluno ?");
 	String idade = JOptionPane.showInputDialog("Qual a sua idade do aluno ? ");
 	String DataNascimento = JOptionPane.showInputDialog("Qual a sua data de nascimento ? ");
 	String Rg = JOptionPane.showInputDialog("Digite seu RG ? ");
@@ -39,15 +39,32 @@ public class PrimeiraClasseJava {
     aluno1.setNota1(Double.parseDouble(Nota1));
     aluno1.setNota2(Double.parseDouble(Nota2));
     aluno1.setNota3(Double.parseDouble(Nota3));
-    aluno1.setNota4(Double.parseDouble(Nota4));
+    aluno1.setNota4(Double.parseDouble(Nota4));*/
     
     
       
-      System.out.println(aluno1.toString());//descreve do obejeto na memoria
-      System.out.println("Media do aluno =" + aluno1.getMediaNota());
-      System.out.println("Resultado = " + aluno1.getAlunoAprovado2());
+     /* System.out.println(aluno1.toString()); /* descreve do obejeto na memoria*/
+      /*System.out.println("Media do aluno =" + aluno1.getMediaNota());
+      System.out.println("Resultado = " + aluno1.getAlunoAprovado2());*/
      
+		
+		//Equals e hashcode (Diferenciar Obejtos
       
+		Aluno aluno1 = new Aluno();
+		aluno1.setNome("Caio");
+		aluno1.setNumeroCpf("123");
+		
+		Aluno aluno2 = new Aluno();
+		aluno2.setNome("Caio");
+		aluno2.setNumeroCpf("1234"); 
+		
+	 if (aluno1.equals(aluno2)) {
+		 System.out.println("Aluno são iguais");		 
+	 }else {
+		 System.out.println("Aluno não são iguais");
+	 }
+		
+		
 	}
 
 }
