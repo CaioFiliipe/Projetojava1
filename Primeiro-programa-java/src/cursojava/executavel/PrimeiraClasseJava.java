@@ -9,7 +9,7 @@ public class PrimeiraClasseJava {
 	// main é um metodo auto ecxecutavel em java
 	public static void main(String[] args) {
    		
-	/*String nome = JOptionPane.showInputDialog("Qual o Nome do aluno ?");
+	String nome = JOptionPane.showInputDialog("Qual o Nome do aluno ?");
 	String idade = JOptionPane.showInputDialog("Qual a sua idade do aluno ? ");
 	String DataNascimento = JOptionPane.showInputDialog("Qual a sua data de nascimento ? ");
 	String Rg = JOptionPane.showInputDialog("Digite seu RG ? ");
@@ -19,9 +19,17 @@ public class PrimeiraClasseJava {
 	String DataMatricula = JOptionPane.showInputDialog("Digite a data da Matricula ? ");
 	String SerieMatriculado = JOptionPane.showInputDialog("Qual a serie do aluno ? ");
 	String NomeEscola = JOptionPane.showInputDialog("Qual o nome da escola? ");
+	
+	String disciplina1 =JOptionPane.showInputDialog("Disciplina 1 ?");
 	String Nota1 = JOptionPane.showInputDialog("Digite a sua primeira nota ? ");
+	
+	String disciplina2 =JOptionPane.showInputDialog("Disciplina 2 ?");
 	String Nota2 = JOptionPane.showInputDialog("Digite sua segunda nota ? ");
+	
+	String disciplina3 =JOptionPane.showInputDialog("Disciplina 3 ?");
 	String Nota3 = JOptionPane.showInputDialog("Digite sua terceira nota ? ");
+	
+	String disciplina4 =JOptionPane.showInputDialog("Disciplina 4 ?");
 	String Nota4 = JOptionPane.showInputDialog("Digite sua quarta nota ? ");
 	
 	Aluno aluno1 = new Aluno();	
@@ -36,34 +44,25 @@ public class PrimeiraClasseJava {
     aluno1.setDataMatricula(DataMatricula);
     aluno1.setSerieMatriculado(SerieMatriculado);
     aluno1.setNomeEscola(NomeEscola);   
+    
     aluno1.setNota1(Double.parseDouble(Nota1));
     aluno1.setNota2(Double.parseDouble(Nota2));
     aluno1.setNota3(Double.parseDouble(Nota3));
-    aluno1.setNota4(Double.parseDouble(Nota4));*/
+    aluno1.setNota4(Double.parseDouble(Nota4));
     
+    aluno1.setDisciplina1(disciplina1);
+    aluno1.setDisciplina2(disciplina2);
+    aluno1.setDisciplina3(disciplina3);
+    aluno1.setDisciplina4(disciplina4);
+
     
       
-     /* System.out.println(aluno1.toString()); /* descreve do obejeto na memoria*/
-      /*System.out.println("Media do aluno =" + aluno1.getMediaNota());
-      System.out.println("Resultado = " + aluno1.getAlunoAprovado2());*/
+      System.out.println(aluno1.toString()); /* descreve do obejeto na memoria*/
+      System.out.println("Media do aluno =" + aluno1.getMediaNota());
+      System.out.println("Resultado = " + aluno1.getAlunoAprovado2());
      
 		
-		//Equals e hashcode (Diferenciar Obejtos
-      
-		Aluno aluno1 = new Aluno();
-		aluno1.setNome("Caio");
-		aluno1.setNumeroCpf("123");
-		
-		Aluno aluno2 = new Aluno();
-		aluno2.setNome("Caio");
-		aluno2.setNumeroCpf("1234"); 
-		
-	 if (aluno1.equals(aluno2)) {
-		 System.out.println("Aluno são iguais");		 
-	 }else {
-		 System.out.println("Aluno não são iguais");
-	 }
-		
+	
 		
 	}
 
