@@ -1,5 +1,9 @@
 package cursojava.classes;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import cursojava.executavel.Disciplina;
 
 //esta é nossa classe/obejto que representa o aluno
@@ -16,17 +20,16 @@ public class Aluno {
 	private String nomeEscola;
     
 	
-    private Disciplina disciplina = new Disciplina();
+    private List<Disciplina>  disciplinas = new ArrayList<Disciplina>();
     
-public void setDisciplina(Disciplina disciplina) {
-	this.disciplina = disciplina;
+  public void setDisciplinas(List<Disciplina> disciplinas) {
+	this.disciplinas = disciplinas;
 }
-
-public Disciplina getDisciplina() {
-	return disciplina;
+  
+  public List<Disciplina> getDisciplinas() {
+	return disciplinas;
 }
-
-
+    
 
 public Aluno() { //cria os dados na memoria 
 	
@@ -130,13 +133,18 @@ public void setNomeEscola(String nomeEscola) {
   
 //metodo que retorna a media do aluno
   public double getMediaNota() {
-	  return (disciplina.getNota1() + disciplina.getNota2()
-	  + disciplina.getNota3() + disciplina.getNota4());
+	 double somaNotas = 0.0;
+	  
+	  for (Disciplina disciplina : disciplinas){
+		 somaNotas += disciplina.getNota();
+	  }
+	  
+	  return somaNotas / disciplinas.size();
   }
   //Metodo que retorna true para aprovado e false para reprovado
   public boolean getAlunoAprovado() {
 	  double media = this.getMediaNota();
-	  if (media >=14) {
+	  if (media >=70) {
 		  return true;
 	  }else {
 		 return false; 
@@ -144,7 +152,7 @@ public void setNomeEscola(String nomeEscola) {
   }
   public String getAlunoAprovado2() {
 	  double media = this.getMediaNota();
-	  if (media >=14) {
+	  if (media >=70) {
 		  return "Aluno Está Aprovado";
 	  }else {
 		 return "Aluno Está Reprovado"; 
@@ -158,7 +166,7 @@ public String toString() {
 	return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", RegistroGeral="
 			+ RegistroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
 			+ ", dataMatricula=" + dataMatricula + ", serieMatriculado=" + serieMatriculado + ", nomeEscola="
-			+ nomeEscola + ", disciplina=" + disciplina + "]";
+			+ nomeEscola + "]";
 }
 
 @Override
